@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controlador;
 
+
+
 namespace Vista
 {
     public partial class Interfaz : Form
@@ -18,6 +20,7 @@ namespace Vista
             InitializeComponent();
         }
 
+
         private void botonAlta_Click(object sender, EventArgs e)
         {
             UsuarioControlador.Alta(textId.Text, textNombre.Text, textApellido.Text);
@@ -26,5 +29,6 @@ namespace Vista
             textNombre.Text = "";
             textApellido.Text = "";
         }
+
     }
 }

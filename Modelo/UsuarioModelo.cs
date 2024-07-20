@@ -11,12 +11,13 @@ namespace Modelo
         public int Id;
         public string Nombre;
         public string Apellido;
-
+        public static int globalId = 1;
         public void GuardarUsuario()
         {
-            string sql = $"INSERT INTO usuarios (nombre,apellido) VALUES('{this.Nombre}',{this.Apellido})";
+            string sql = $"INSERT INTO usuarios (id,nombre,apellido) VALUES({this.Id},'{this.Nombre}','{this.Apellido}')";
             this.Comando.CommandText = sql;
             this.Comando.ExecuteNonQuery();
+            //this.Id = ++globalId;
         }
 
     }

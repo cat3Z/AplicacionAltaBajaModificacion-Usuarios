@@ -20,9 +20,9 @@ namespace Modelo
 
         public Modelo()
         {
-            this.IP = "127.0.0.10";
+            this.IP = "localhost";
             this.NombreBase = "usuarios";
-            this.Password = "";
+            this.Password = "Abcd1234!";
             this.NombreDeUsuario = "root";
 
             this.Conexion = new MySqlConnection(

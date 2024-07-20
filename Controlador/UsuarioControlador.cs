@@ -9,10 +9,10 @@ namespace Controlador
 {
     public class UsuarioControlador
     {
-        public static void Alta(string nombre, string apellido)
+        public static void Alta(string id, string nombre, string apellido)
         {
             UsuarioModelo usuario = new UsuarioModelo();
-            //usuario.Id = Int32.Parse(id);
+            usuario.Id = Int32.Parse(id);
             usuario.Nombre = nombre;
             usuario.Apellido = apellido;
 

@@ -38,6 +38,7 @@ namespace Vista
             this.botonAlta = new System.Windows.Forms.Button();
             this.textId = new System.Windows.Forms.TextBox();
             this.labelId = new System.Windows.Forms.Label();
+            this.botonBaja = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaDeDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,11 +120,22 @@ namespace Vista
             this.labelId.TabIndex = 15;
             this.labelId.Text = "Id";
             // 
+            // botonBaja
+            // 
+            this.botonBaja.Location = new System.Drawing.Point(129, 174);
+            this.botonBaja.Name = "botonBaja";
+            this.botonBaja.Size = new System.Drawing.Size(84, 30);
+            this.botonBaja.TabIndex = 16;
+            this.botonBaja.Text = "Baja";
+            this.botonBaja.UseVisualStyleBackColor = true;
+            this.botonBaja.Click += new System.EventHandler(this.botonBaja_Click);
+            // 
             // Interfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.botonBaja);
             this.Controls.Add(this.labelId);
             this.Controls.Add(this.textId);
             this.Controls.Add(this.botonAlta);
@@ -152,6 +164,7 @@ namespace Vista
         private System.Windows.Forms.Button botonAlta;
         private System.Windows.Forms.TextBox textId;
         private System.Windows.Forms.Label labelId;
+        private System.Windows.Forms.Button botonBaja;
     }
 }
 
